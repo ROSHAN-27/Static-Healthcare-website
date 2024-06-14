@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+</head>
+<body>
+
+  <h1>Login Page</h1>
+
+  <form id="loginForm">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    
+    <button type="button" onclick="login()">Login</button>
+  </form>
+
+  <script>
+    function login() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+      if (username && password) {
+        // Both username and password are provided
+        var greetingMessage = "Hello, " + username + "!";
+        document.getElementById("userName").textContent = greetingMessage;
+
+        // Store username in sessionStorage
+        sessionStorage.setItem("loggedInUser", username);
+
+        // Redirect to another page
+        window.location.href = "dashboard.html"; // Change to the desired page
+      } else {
+        // Either username or password is missing
+        alert("Invalid credentials. Please enter both username and password.");
+      }
+    }
+  </script>
+
+</body>
+</html>

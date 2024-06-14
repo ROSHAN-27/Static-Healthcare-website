@@ -1,0 +1,152 @@
+.appointment{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em;
+    background-image: url(../images1/contactimg.jpg);
+   background-repeat: no-repeat;
+   background:(76, 175, 80, 0.3)
+  }
+  
+  .appointment p {
+    font-weight: 700;
+    color:#6a6a6a ;
+  }
+  .button {
+    width: 150px;
+    height: 50px;
+    background-color: #6f8fbc;
+    border-radius: 15px;
+    color: white;
+    font-size: 19px;
+    border-color: #6f8fbc;
+  }
+  
+  form{
+    border: 2px solid white;
+    padding: 2rem;
+    border-radius: 5px;
+    background-color: #dfe9f7;
+  }
+
+  span2 {
+    font-weight: 700;
+    font-size: 2em;
+  }
+
+  h3{
+    font-weight: 500;
+    font-size: 1.3em;
+    color: #0747a2;
+    text-align: center;
+  }
+  
+  input {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #eef5ff;
+    border-color: white;
+    font-size: 1rem;
+  }
+  
+  
+  label{
+     padding: 05px;
+     text-align: baseline;
+  }
+  
+  .appointmentForm {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  
+  #appointmentName {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  #appointmentPhone {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  
+  #appointmentEmail {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  
+  #appointmentDate {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  
+  #appointmentTime {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  
+  #appointmentMsg {
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+  
+  .appointmentInputs {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  
+ 
+  @media only screen and (max-width: 767px) {
+    body{
+      max-width: fit-content;
+    }
+
+    .appointment {
+      flex-direction: column;
+    }
+
+    .img7{
+      max-width: 100%;
+      height: auto;
+    }
+
+   input[type=text] {
+      max-width: fit-content;
+   }
+
+   #appointmentName {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+   #appointmentPhone {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+  
+  #appointmentEmail {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+  
+  #appointmentDate {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+  
+  #appointmentTime {
+    grid-column: 1/2;
+    grid-row: 5/6;
+  }
+  
+  #appointmentMsg {
+    grid-column: 1/2;
+    grid-row: 6/7;
+  }
+
+  #appointmentButton {
+    grid-column: 1/2;
+    grid-row: 7/8; 
+  }
+
+   
+}

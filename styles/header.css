@@ -1,0 +1,129 @@
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: #eef5ff;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #021d3f;
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  display: inline-block;
+  text-decoration: overline;
+  font-size: 38px;
+  font-weight: 700;
+  color: #fff;
+  margin: 1rem 0rem;
+}
+
+h4 {
+  display: inline;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: underline;
+}
+
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.topnav a:hover {
+  text-decoration: overline;
+  
+}
+
+.topnav .icon {
+  display: none;
+}
+
+a {
+  list-style-type: none;
+  text-decoration: none;
+  font-weight: 400;
+  color: rgb(129, 128, 128);
+  padding-right: 10px;
+}
+
+p {
+  text-align: start;
+}
+
+@media only screen and (max-width: 767px) {
+  .logo {
+    font-size: 28px;
+    display: inline-block;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  body {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
+  @media screen and (max-width: 600px) {
+    .topnav a {display: none;}
+    .topnav a.icon {
+      float: left;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .logo {
+    font-size: 24px; /* Adjust font size for 375px screens */
+  }
+
+  h4 {
+    font-size: 16px; /* Adjust font size for 375px screens */
+  }
+
+  body {
+    font-size: 14px; /* Adjust font size for 375px screens */
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .logo {
+    font-size: 20px; /* Adjust font size for 320px screens */
+  }
+
+  h4 {
+    font-size: 14px; /* Adjust font size for 320px screens */
+  }
+
+  body {
+    font-size: 12px; /* Adjust font size for 320px screens */
+  }
+}

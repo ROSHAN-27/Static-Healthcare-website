@@ -1,0 +1,65 @@
+.footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); /* Adjusted for responsiveness */
+  background-color: #021d3f;
+  color: #7b7777;
+  padding: 1em;
+  font-size: 17px;
+  border-bottom: 2px solid grey;
+}
+
+.logo1 {
+  display: inline-block;
+  text-decoration: overline;
+  font-size: 38px;
+  font-weight: 700;
+  color: white;
+  margin: 0rem;
+}
+.img5 {
+  width: 50px;
+  height: 50px;
+  border-radius: 60%;
+}
+
+.h4 {
+  display: inline;
+  font-weight: 600;
+  color: white;
+  text-decoration: underline;
+}
+
+ol a {
+  color: #7b7777;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0rem;
+}
+
+ol li {
+  list-style-type: circle;
+}
+
+ol a:hover {
+  color: white;
+}
+
+p:hover {
+  color: rgb(174, 111, 111);
+}
+
+
+  @media only screen and (max-width: 767px) {
+    .logo1 {
+      font-size: 28px;
+    }
+
+    .footer {
+      font-size: 12px;
+    }
+
+  }
+
+
+ 
+  
